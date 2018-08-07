@@ -99,8 +99,8 @@ public class ArjKhazar extends TelegramLongPollingBot {
 
             } else if (update.getMessage().getText().equals("ارتباط با ما")) {
                 String message = "برای اگاهی از اخرین قیمت ها وسفارش میتوانید با ایدی ادمین ویا شمارهی ادمین در تماس باشد \n"
-                        + "ایدی ادمین : @Abolfaz_na71\n"
-                        + "شماره ی تلفن :09148469188  ";
+                        + "ایدی ادمین : @arj_khazar\n"
+                        + "شماره ی تلفن :09197172273  ";
                 SendMessage sendMessage = new SendMessage()
                         .setText(message).setChatId(chat_id);
                 try {
@@ -326,12 +326,11 @@ public class ArjKhazar extends TelegramLongPollingBot {
                 }
             } else {
                 try {
-                    sendMessage( new SendMessage().setText("ورودی نامشخص برای راهنمای و بازدید از محصولات میتوانید از /mark_up استفاده کنید").setChatId(chat_id));
+                    sendMessage(new SendMessage().setText("ورودی نامشخص برای راهنمای و بازدید از محصولات میتوانید از /mark_up استفاده کنید").setChatId(chat_id));
                 } catch (TelegramApiException ex) {
                     Logger.getLogger(ArjKhazar.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
-            
 
         }
 //            else if (update.hasMessage() && update.getMessage().hasPhoto()) {
